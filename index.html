@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Rastila aikataulut</title>
+</head>
+
+<body class="mainbod" onload="initializeData(15000)">
+
+    <div class="topContainer">
+        <div name="mainheading" class="niceText mainheading">
+            <h1>Rastila aikataulut<br>Mikko Nirkko 2020</h1>
+        </div>
+        <span id="currentTime" class="currentTime niceText mainheading"></span>
+        <span></span>
+    </div>
+    <div class="mainContainer">
+        <div class="leftStuff">
+            <div class="container">
+                <h2 class="niceText center">M Länteen</h2>
+                <div class="niceText metro" id="metukka">
+                    <table id="metro_timetable_w" class="niceText"></table>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="niceText center">M Itään</h2>
+                <div class="niceText metro" id="metukka">
+                    <table id="metro_timetable_e" class="niceText"></table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="niceText center">Bussi 560</h2>
+            <div class="niceText bus" id="bus">
+                <table id="timetable" class="niceText"></table>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="niceText center">Bussi muut</h2>
+            <div class="niceText bus" id="bus2">
+                <table id="timetable" class="niceText"></table>
+            </div>
+        </div>
+
+    </div>
+    <div name="footer" class="niceText footer">
+        <h1>Rastila aikataulut<br>Mikko Nirkko 2020</h1>
+    </div>
+</body>
+<script src="js/functions.js">
+</script>
+
+</html>
